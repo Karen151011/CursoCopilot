@@ -74,6 +74,42 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #dfe4ec;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #39445c;
+  font-size: 0.9rem;
+}
+
+.participants-list {
+  padding-left: 0;
+  list-style: none;
+  color: #465268;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.participants-list li:not(.empty-participants) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+  padding: 5px 7px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.participants-list .empty-participants {
+  color: #737d8d;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -106,6 +142,27 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+.participants-list .participant-remove {
+  display: inline-grid;
+  flex: 0 0 28px;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #f1c5c2;
+  border-radius: 4px;
+  background-color: #fff5f4;
+  color: #b42318;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.participants-list .participant-remove:hover {
+  border-color: #d92d20;
+  background-color: #fee4e2;
+  color: #912018;
 }
 
 .message {
